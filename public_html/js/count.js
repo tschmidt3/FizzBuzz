@@ -10,17 +10,17 @@ $(document).ready(function(){
    while(output <=end){
        if (output%3 === 0){
            if(output%5 === 0){
-               $('body').append("FizzBuzz\n");
+               $('body pre').append("FizzBuzz\n");
            }
            else {
-               $('body').append("fizz\n");
+               $('body pre').append("fizz\n");
            }
        }
        else if(output%5 === 0) {
-           $('body').append("buzz\n");
+           $('body pre').append("buzz\n");
        }
        else {
-           $('body').append(output+"\n");
+           $('body pre').append(output+"\n");
        }
        output+=1;
    }
